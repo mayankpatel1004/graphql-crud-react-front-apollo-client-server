@@ -12,3 +12,34 @@ Queries -
 Mutations - 
     Our requests that are going to affect any data that we have on our own server.
 ```
+
+```bash
+# mutation{
+#   setMessage(newMessage: "Its a Mutation !!!....")
+# }
+
+mutation{
+  CreateUser(name:"Mikkke", email:"mayank@yopmail.com", gender: "Male"),{
+    name
+    email
+  }
+}
+
+# query {
+#   welcomeMessage(name: "Mayank Patel",dayOfWeek: "Sunday")
+#   hello
+#   getUser {
+#     name
+#     college
+#   }
+#   getUsers{
+#     name
+#   }
+#   getPostsFromExternalAPI {
+#     id
+#     body
+#   }
+# }
+
+
+```
